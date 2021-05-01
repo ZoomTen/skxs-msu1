@@ -1,0 +1,45 @@
+# compiled objects
+*.o
+
+# compiled roms
+*.gbc
+*.gb
+
+# rgbds extras
+*.map
+*.sym
+
+# precompiled python
+*.pyc
+*$py.class
+
+# save game files
+*.sgm
+*.sav
+*.rtc
+*.sn*
+*.sa*
+*.sg1
+
+# vim configuration
+# http://www.vim.org/scripts/script.php?script_id=441
+.lvimrc
+
+# swap files for vim and gedit
+.*.swp
+*~
+
+# macos files
+.DS_STORE
+
+# hack: things prefixed with #
+\#*/
+
+# patches
+*.bps
+
+# generated file
+patches/msu1/_bootstrap.asm
+
+_versions/
+_savefiles/
