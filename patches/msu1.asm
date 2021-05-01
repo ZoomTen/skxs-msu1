@@ -1,14 +1,5 @@
-SGB_PACKET_SIZE equ $10
-
 MSU1_EntryPoint:
-; a should contain the song ID by now
-	;di
-	;push af
-	;push de
-	;push bc
-	;push hl
-	;call Wait7000
-	
+; @a = Music ID to play
 	ld b, a
 	ld c,  SGB_PACKET_SIZE
 	ld hl, MSU1SoundTemplate
@@ -19,18 +10,15 @@ MSU1_EntryPoint:
 	inc de
 	dec c
 	jr nz, .copy_template
-	
-	ld a, b	; restore song ID 
-	ld [wMSU1PacketSend + 6], a ; set song number
-	
+
+; Insert the song ID into the packet template
+	ld a, b
+	ld [wMSU1PacketSend + 6], a
+
+; Send over the packet from RAM
 	ld hl, wMSU1PacketSend
 	call SendSGBPacket
-	
-	;pop hl
-	;pop bc
-	;pop de
-	;pop af
-	ret;i
+	ret
 
 MSU1SoundTemplate::
 	DATA_SND $1800, $0, 5 ; 5 bytes
