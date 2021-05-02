@@ -43,3 +43,7 @@ patches/msu1/_bootstrap.asm
 
 _versions/
 _savefiles/
+
+# BGM
+bgm/msu1/
+bgm/rendered/

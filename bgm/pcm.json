@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/qwertymodo/msupcmplusplus/master/configs/schema#",
+	"game": "Shi Kong Xing Shou",
+	"normalization": -22,
+	"output_prefix": "msu1\\skxs_msu1",
+	"tracks": [
+		{
+			"track_number": 1,
+			"file": "rendered\\01_hometown.flac",
+			"loop": 40244,
+			"trim_end": 1733190
+		},
+		{
+			"track_number": 2,
+			"file": "rendered\\02_LightMetaS_battle1cut.flac",
+			"loop": 296080
+		},
+		{
+			"track_number": 3,
+			"file": "rendered\\03_trouble.flac",
+			"loop": 44155,
+			"trim_end": 1480051
+		},
+		{
+			"track_number": 11,
+			"file": "rendered\\11_crossroads.flac",
+			"loop": 44799,
+			"trim_end": 1367650
+		},
+		{
+			"track_number": 17,
+			"file": "rendered\\17_meteor_shower.flac",
+			"loop": 71002,
+			"trim_end": 1200075
+		},
+		{
+			"track_number": 23,
+			"file": "rendered\\23_title.flac",
+			"loop": 123822,
+			"trim_end": 688403
+		}
+	]
+}
