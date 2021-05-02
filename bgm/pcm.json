@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/qwertymodo/msupcmplusplus/master/configs/schema#",
 	"game": "Shi Kong Xing Shou",
-	"normalization": -22,
+	"normalization": -18,
 	"output_prefix": "msu1\\skxs_msu1",
 	"tracks": [
 		{
