@@ -45,6 +45,11 @@
 			"file": "rendered\\23_title.flac",
 			"loop": 123822,
 			"trim_end": 688403
+		},
+		{
+			"track_number": 27,
+			"normalization": -21,
+			"file": "rendered\\27_battle_start.flac"
 		}
 	]
 }
