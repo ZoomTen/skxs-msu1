@@ -50,7 +50,7 @@ msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND)
 		cp -f $$i rendered; \
 	done
 	mkdir -p msu1
-	$(WINE) $(MSUPCM) $<
+	$(WINE) $(MSUPCM) $< 2>/dev/null
 	touch msu1/skxs_msu1.msu
 
 clean:
