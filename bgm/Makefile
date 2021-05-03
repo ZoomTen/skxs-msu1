@@ -16,7 +16,8 @@ SOUND := \
 	rendered/01_hometown.flac \
 	rendered/03_trouble.flac \
 	rendered/11_crossroads.flac \
-	rendered/23_title.flac
+	rendered/23_title.flac \
+	rendered/10_rocky.flac
 
 .PHONY: all preamble copy
 

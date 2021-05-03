@@ -22,6 +22,13 @@
 			"trim_end": 1480051
 		},
 		{
+			"track_number": 10,
+			"file": "rendered\\10_rocky.flac",
+			"loop": 197447,
+			"trim_end": 1247125,
+			"trim_start": 66102
+		},
+		{
 			"track_number": 11,
 			"file": "rendered\\11_crossroads.flac",
 			"loop": 44799,
