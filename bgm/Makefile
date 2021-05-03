@@ -19,6 +19,8 @@ SOUND := \
 	rendered/23_title.flac \
 	rendered/10_rocky.flac
 
+EXT_FLAC := $(shell find external_flac -type f -iname "*.flac")
+
 .PHONY: all preamble copy
 
 all: preamble msu1/skxs_msu1.msu
@@ -44,7 +46,7 @@ rendered/%.flac: flp/%.flp
 		/r /eflac "$(WINEPWD)\\$(subst /,\\,$<)" >/dev/null 2>&1
 	mv $(subst .flp,.flac,$<) $@
 
-msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND)
+msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND) $(EXT_FLAC)
 	for i in external_flac/*.flac; do \
 		[ -f "$$i" ] || continue; \
 		cp -f $$i rendered; \
