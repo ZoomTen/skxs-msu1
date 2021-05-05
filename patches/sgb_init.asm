@@ -70,7 +70,10 @@ endr
 .push_bootstrap
 	call SendSGBPacket
 	dec c
-	jr nz, .push_bootstrap
+	ret z
+	jr .push_bootstrap
+
+MSU1_Init:
 	ld hl, JumpToMSU1EntryPoint	; execute MSU1 init
 	jp SendSGBPacket
 
