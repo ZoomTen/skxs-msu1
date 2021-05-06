@@ -41,6 +41,12 @@
 			"trim_end": 1200075
 		},
 		{
+			"track_number": 21,
+			"file": "rendered\\21_intro.flac",
+			"loop": 197577,
+			"trim_end": 2513099
+		},
+		{
 			"track_number": 23,
 			"file": "rendered\\23_title.flac",
 			"loop": 123822,

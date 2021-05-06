@@ -17,7 +17,8 @@ SOUND := \
 	rendered/03_trouble.flac \
 	rendered/11_crossroads.flac \
 	rendered/23_title.flac \
-	rendered/10_rocky.flac
+	rendered/10_rocky.flac \
+	rendered/21_intro.flac
 
 EXT_FLAC := $(shell find external_flac -type f -iname "*.flac")
 
