@@ -15,10 +15,31 @@ MSU1_EntryPoint:
 	ld a, b
 	ld [wMSU1PacketSend + 6], a
 
+; There's only a few non-looping music, so
+; we can handle the lack of LUTs
+	cp 29
+	jr z, .no_loop
+	cp 28
+	jr z, .no_loop
+	cp 27
+	jr z, .no_loop
+	cp 20
+	jr z, .no_loop
+	cp 19
+	jr z, .no_loop
+	cp 18
+	jr z, .no_loop
+
+.okay
 ; Send over the packet from RAM
 	ld hl, wMSU1PacketSend
 	call SendSGBPacket
 	ret
+
+.no_loop
+	ld a, 1
+	ld [wMSU1PacketSend + 9], a
+	jr .okay
 
 MSU1SoundTemplate::
 	DATA_SND $1800, $0, 5 ; 5 bytes
