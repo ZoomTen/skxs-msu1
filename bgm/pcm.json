@@ -35,6 +35,12 @@
 			"trim_end": 1367650
 		},
 		{
+			"track_number": 13,
+			"file": "rendered\\13_academic.flac",
+			"loop": 125354,
+			"trim_end": 697604
+		},
+		{
 			"track_number": 17,
 			"file": "rendered\\17_meteor_shower.flac",
 			"loop": 71002,
