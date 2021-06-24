@@ -6,7 +6,7 @@
 	"tracks": [
 		{
 			"track_number": 1,
-			"file": "rendered\\01_hometown.flac",
+			"file": "rendered\\01_hometown.wav",
 			"loop": 40244,
 			"trim_end": 1733190
 		},
@@ -17,26 +17,38 @@
 		},
 		{
 			"track_number": 3,
-			"file": "rendered\\03_trouble.flac",
+			"file": "rendered\\03_trouble.wav",
 			"loop": 44155,
 			"trim_end": 1480051
 		},
 		{
+			"track_number": 8,
+			"file": "rendered\\08_town1.wav",
+			"loop": 105928,
+			"trim_end": 1781443
+		},
+		{
 			"track_number": 10,
-			"file": "rendered\\10_rocky.flac",
+			"file": "rendered\\10_rocky.wav",
 			"loop": 197447,
 			"trim_end": 1247125,
 			"trim_start": 66102
 		},
 		{
 			"track_number": 11,
-			"file": "rendered\\11_crossroads.flac",
+			"file": "rendered\\11_crossroads.wav",
 			"loop": 44799,
 			"trim_end": 1367650
 		},
 		{
+			"track_number": 12,
+			"file": "rendered\\12_observing.wav",
+			"loop": 157624,
+			"trim_end": 1237534
+		},
+		{
 			"track_number": 13,
-			"file": "rendered\\13_academic.flac",
+			"file": "rendered\\13_academic.wav",
 			"loop": 125354,
 			"trim_end": 697604
 		},
@@ -56,13 +68,13 @@
 		},
 		{
 			"track_number": 21,
-			"file": "rendered\\21_intro.flac",
+			"file": "rendered\\21_intro.wav",
 			"loop": 197577,
 			"trim_end": 2513099
 		},
 		{
 			"track_number": 23,
-			"file": "rendered\\23_title.flac",
+			"file": "rendered\\23_title.wav",
 			"loop": 123822,
 			"trim_end": 688403
 		},

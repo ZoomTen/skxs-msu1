@@ -13,13 +13,15 @@ MSUPCM := ../tools/msupcm.exe
 MSUCONFIG := pcm.json
 
 SOUND := \
-	rendered/01_hometown.flac \
-	rendered/03_trouble.flac \
-	rendered/11_crossroads.flac \
-	rendered/23_title.flac \
-	rendered/10_rocky.flac \
-	rendered/21_intro.flac \
-	rendered/13_academic.flac
+	rendered/01_hometown.wav \
+	rendered/03_trouble.wav \
+	rendered/11_crossroads.wav \
+	rendered/23_title.wav \
+	rendered/10_rocky.wav \
+	rendered/21_intro.wav \
+	rendered/13_academic.wav \
+	rendered/08_town1.wav \
+	rendered/12_observing.wav
 
 EXT_FLAC := $(shell find external_flac -type f -iname "*.flac")
 
@@ -43,10 +45,10 @@ preamble:
 	@echo '    -  and accessible by FL Studio first!! -'
 	@echo '    ----------------------------------------'
 
-rendered/%.flac: flp/%.flp
+rendered/%.wav: flp/%.flp
 	WINEPREFIX="$(WINEPREFIX)" $(WINE) "$(FLSTUDIO)" \
-		/r /eflac "$(WINEPWD)\\$(subst /,\\,$<)" >/dev/null 2>&1
-	mv $(subst .flp,.flac,$<) $@
+		/r /ewav "$(WINEPWD)\\$(subst /,\\,$<)" >/dev/null 2>&1
+	mv $(subst .flp,.wav,$<) $@
 
 msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND) $(EXT_FLAC)
 	for i in external_flac/*.flac; do \
@@ -58,5 +60,5 @@ msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND) $(EXT_FLAC)
 	touch msu1/skxs_msu1.msu
 
 clean:
-	rm -f flp/*.flac
+	rm -f flp/*.wav
 	rm -rf rendered msu1
