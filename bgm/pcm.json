@@ -43,8 +43,8 @@
 		{
 			"track_number": 12,
 			"file": "rendered\\12_observing.wav",
-			"loop": 157624,
-			"trim_end": 1237534
+			"loop": 144817,
+			"trim_end": 1136984
 		},
 		{
 			"track_number": 13,
@@ -61,16 +61,45 @@
 			"normalization": -16
 		},
 		{
+			"track_number": 16,
+			"file": "rendered\\16_racing.wav",
+			"loop": 198184,
+			"trim_end": 1256850,
+			"trim_start": 24233,
+			"normalization": -16
+		},
+		{
 			"track_number": 17,
-			"file": "rendered\\17_meteor_shower.flac",
+			"file": "rendered\\17_meteor_shower.wav",
 			"loop": 71002,
 			"trim_end": 1200075
+		},
+		{
+			"track_number": 18,
+			"file": "rendered\\18_level_up_fanfare.wav",
+			"normalization": -23
+		},
+		{
+			"track_number": 19,
+			"file": "rendered\\19_got_exp_fanfare.wav",
+			"normalization": -23
+		},
+		{
+			"track_number": 20,
+			"file": "rendered\\20_monster_defeat_fanfare.wav",
+			"normalization": -23
 		},
 		{
 			"track_number": 21,
 			"file": "rendered\\21_intro.wav",
 			"loop": 197577,
 			"trim_end": 2513099
+		},
+		{
+			"track_number": 22,
+			"file": "rendered\\22_scrapyard.wav",
+			"loop": 487388,
+			"trim_end": 2442462
 		},
 		{
 			"track_number": 23,

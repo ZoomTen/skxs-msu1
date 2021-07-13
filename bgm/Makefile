@@ -21,7 +21,13 @@ SOUND := \
 	rendered/21_intro.wav \
 	rendered/13_academic.wav \
 	rendered/08_town1.wav \
-	rendered/12_observing.wav
+	rendered/12_observing.wav \
+	rendered/16_racing.wav \
+	rendered/22_scrapyard.wav \
+	rendered/18_level_up_fanfare.wav \
+	rendered/19_got_exp_fanfare.wav \
+	rendered/20_monster_defeat_fanfare.wav \
+	rendered/17_meteor_shower.wav
 
 EXT_FLAC := $(shell find external_flac -type f -iname "*.flac")
 
