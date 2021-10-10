@@ -1,6 +1,6 @@
 # Wine variables should be empty when building on Windows
 WINE ?= /usr/bin/wine
-WINEPREFIX ?= /home/zumid/_old_home/.PlayOnLinux/wineprefix/FLS12
+WINEPREFIX := /home/zumid/.local/share/wineprefixes/fl_studio
 
 # This is the drive letter that points to /.
 WINEDRIVELETTER := R
@@ -8,9 +8,11 @@ WINEDRIVELETTER := R
 WINEPWD := $(subst /,\\,$(WINEDRIVELETTER):$(shell pwd))
 
 FLSTUDIO := C:/Program Files (x86)/Image-Line/FL Studio 12/FL.exe
-MSUPCM := ../tools/msupcm.exe
+MSUPCM := tools/msupcm.exe
 
 MSUCONFIG := pcm.json
+
+PYTHON ?= python
 
 SOUND := \
 	rendered/01_hometown.wav \
@@ -27,7 +29,9 @@ SOUND := \
 	rendered/18_level_up_fanfare.wav \
 	rendered/19_got_exp_fanfare.wav \
 	rendered/20_monster_defeat_fanfare.wav \
-	rendered/17_meteor_shower.wav
+	rendered/17_meteor_shower.wav \
+	rendered/02_battle_1.wav \
+	rendered/07_battle_2.wav
 
 EXT_FLAC := $(shell find external_flac -type f -iname "*.flac")
 
@@ -64,6 +68,9 @@ msu1/skxs_msu1.msu: $(MSUCONFIG) $(SOUND) $(EXT_FLAC)
 	mkdir -p msu1
 	$(WINE) $(MSUPCM) $< 2>/dev/null
 	touch msu1/skxs_msu1.msu
+
+$(MSUCONFIG): pcm.json.template
+	$(PYTHON) tools/fetch_loop_points.py $< $@
 
 clean:
 	rm -f flp/*.wav

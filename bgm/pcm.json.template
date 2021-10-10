@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/qwertymodo/msupcmplusplus/master/configs/schema#",
+	"game": "Shi Kong Xing Shou",
+	"normalization": -18,
+	"output_prefix": "msu1\\skxs_msu1",
+	"tracks": [
+		{
+			"track_number": 1,
+			"file": "rendered\\01_hometown.wav"
+		},
+		{
+			"track_number": 2,
+			"file": "rendered\\02_battle_1.wav"
+		},
+		{
+			"track_number": 3,
+			"file": "rendered\\03_trouble.wav"
+		},
+		{
+			"track_number": 7,
+			"file": "rendered\\07_battle_2.wav"
+		},
+		{
+			"track_number": 8,
+			"file": "rendered\\08_town1.wav"
+		},
+		{
+			"track_number": 10,
+			"file": "rendered\\10_rocky.wav",
+			"trim_start": 66102
+		},
+		{
+			"track_number": 11,
+			"file": "rendered\\11_crossroads.wav"
+		},
+		{
+			"track_number": 12,
+			"file": "rendered\\12_observing.wav"
+		},
+		{
+			"track_number": 13,
+			"file": "rendered\\13_academic.wav"
+		},
+		{
+			"track_number": 15,
+			"file": "rendered\\15_town_2.flac",
+			"loop": 268856,
+			"trim_end": 1923625,
+			"trim_start": 116241,
+			"normalization": -16
+		},
+		{
+			"track_number": 16,
+			"file": "rendered\\16_racing.wav",
+			"trim_start": 24233,
+			"normalization": -16
+		},
+		{
+			"track_number": 17,
+			"file": "rendered\\17_meteor_shower.wav"
+		},
+		{
+			"track_number": 18,
+			"file": "rendered\\18_level_up_fanfare.wav",
+			"normalization": -23
+		},
+		{
+			"track_number": 19,
+			"file": "rendered\\19_got_exp_fanfare.wav",
+			"normalization": -23
+		},
+		{
+			"track_number": 20,
+			"file": "rendered\\20_monster_defeat_fanfare.wav",
+			"normalization": -23
+		},
+		{
+			"track_number": 21,
+			"file": "rendered\\21_intro.wav"
+		},
+		{
+			"track_number": 22,
+			"file": "rendered\\22_scrapyard.wav"
+		},
+		{
+			"track_number": 23,
+			"file": "rendered\\23_title.wav"
+		},
+		{
+			"track_number": 27,
+			"normalization": -21,
+			"file": "rendered\\27_battle_start.flac"
+		}
+	]
+}
