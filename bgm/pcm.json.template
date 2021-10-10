@@ -25,6 +25,10 @@
 			"file": "rendered\\08_town1.wav"
 		},
 		{
+			"track_number": 9,
+			"file": "rendered\\09_battle3.wav"
+		},
+		{
 			"track_number": 10,
 			"file": "rendered\\10_rocky.wav",
 			"trim_start": 66102
